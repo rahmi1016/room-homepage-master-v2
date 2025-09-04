@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/rahmi1016/room-homepage-master-v2)
+- Live Site URL: [Live site](https://rahmi1016.github.io/room-homepage-master-v2/)
 
 ## My process
 
