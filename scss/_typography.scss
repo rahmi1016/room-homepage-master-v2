@@ -1,0 +1,103 @@
+@mixin preset-one {
+  font-family: "League Spartan", sans-serif;
+  font-size: 48px;
+  line-height: 90%;
+  letter-spacing: -2px;
+  font-weight: var(--fw-semi);
+}
+@mixin preset-two {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -2px;
+  font-weight: var(--fw-semi);
+}
+@mixin preset-three {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 7px;
+  font-weight: var(--fw-bold);
+}
+@mixin preset-four {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.7px;
+  font-weight: var(--fw-semi);
+}
+@mixin preset-five {
+  font-family: "League Spartan", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  font-weight: var(--fw-normal);
+}
+@mixin preset-six {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 12.5px;
+  font-weight: var(--fw-normal);
+}
+
+a {
+  text-decoration: none;
+}
+#links {
+  a {
+    @include preset-four();
+    color: white;
+  }
+}
+#title {
+  @media (min-width: 320px) {
+    @include preset-two();
+    margin: 0;
+  }
+  @media (min-width: 758px) {
+    @include preset-one();
+  }
+}
+#para-text {
+  @media (min-width: 320px) {
+    @include preset-five();
+    color: var(--grey-500);
+    margin: 0;
+  }
+}
+.shop-text {
+  @include preset-six();
+  text-transform: uppercase;
+}
+.page-four h2 {
+  @media (min-width: 320px) {
+    font-family: "League Spartan", sans-serif;
+    font-size: 14px;
+    line-height: 157%;
+    letter-spacing: 5.83px;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+  }
+  @media (min-width: 758px) {
+    @include preset-three();
+  }
+}
+.page-four p {
+  @include preset-five();
+  color: var(--grey-500);
+  margin: 0;
+}
+#modal {
+  a {
+    @include preset-four();
+    color: var(--black);
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

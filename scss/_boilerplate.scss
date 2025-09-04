@@ -1,0 +1,47 @@
+:root {
+  /* colors */
+  --white: hsl(0, 0, 100%);
+  --grey-800: hsl(0, 0%, 27%);
+  --grey-500: hsl(0, 0%, 63%);
+  --grey-200: hsl(0, 0%, 85%);
+  --grey-100: hsl(0, 0%, 94%);
+  --grey-50: hsl(0, 0%, 98%);
+  --black: hsl(0, 0%, 0%);
+
+  /* font weight*/
+  --fw-normal: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+
+  /* QUERIES */
+  --mobile: min-width: 320px and max-width: 479.98px;
+  --tablet: min-width: 480px and max-width: 767.98px;
+  --desktop: min-width: 780px and max-width: 1023.98px;
+  --large: min-width:1024px;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100vw;
+  height: fit-content;
+  display: block;
+}
